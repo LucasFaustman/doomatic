@@ -31,7 +31,7 @@ export default function AddToDo({onAdd}) {
 
        }
     return (
-        <div>
+        <div className="form">
             <form onSubmit={onSubmit}>
                 <input
                     type="text"
