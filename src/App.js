@@ -1,4 +1,5 @@
 import './App.css';
+import Header from './components/Header';
 import Todo from './components/Todo';
 import AddToDo from './components/AddToDo';
 import { useState, useEffect } from 'react';
@@ -17,7 +18,7 @@ function App() {
 
   function addToDo(todo) {
 
-    if (!todo.dueDate.length || !todo.toDo.length) {
+    if (!todo.toDo.length) {
       setError(true)
     } else {
     setError(false)
@@ -46,8 +47,9 @@ function App() {
     
   return (
     <div className="App">
+      <Header />
       <AddToDo onAdd={addToDo}/>
-      {error && <p className='error'>Please enter your task and due date</p>}
+      {error && <p className='error'>Please enter your task</p>}
       <Todo toDos={toDos} handleCompleteClick={handleCompleteClick} />
     </div>
   );

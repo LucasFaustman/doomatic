@@ -4,8 +4,7 @@ export default function AddToDo({onAdd}) {
 
     const [item,setItem] = useState(
         {
-            toDo: '',
-            dueDate: ''
+            toDo: ''
           }
     )
 
@@ -39,13 +38,6 @@ export default function AddToDo({onAdd}) {
                     onChange={handleChange}
                     name="toDo"
                     value={item.toDo}
-                    />
-                 <input
-                    type="date"
-                    placeholder="Due date"
-                    onChange={handleChange}
-                    name="dueDate"
-                    value={item.dueDate}
                     />
                     <button>Add to do</button>
             </form>

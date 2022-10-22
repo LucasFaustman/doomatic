@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: NeutonCursive-Regular
+font link: https://www.fontsquirrel.com/fonts/neuton
+font author: Brian Zick
+font author site: https://brianskywalker.deviantart.com/
+
+
+icon designer: Juan Garces
+icon designer link: /JuanGarces
+        
+{"bg-gradient-0":"#000A68","bg-gradient-1":"#00C4EE","icon":"#ffffff","font":"#ffffff","slogan":"#ffffff"}
+      
