@@ -3,8 +3,8 @@ import Todo from './components/Todo';
 import AddToDo from './components/AddToDo';
 import { useState, useEffect } from 'react';
 
-
 function App() {
+  const [error, setError] = useState(false)
   const [toDos, setToDos] = useState(() => {
 
     const savedTodos = localStorage.getItem("toDos");
@@ -16,14 +16,20 @@ function App() {
   })
 
   function addToDo(todo) {
+
+    if (!todo.dueDate.length || !todo.toDo.length) {
+      setError(true)
+    } else {
+    setError(false)
     const id = Math.ceil(Math.random()*100000)
 
     const newTodo = {id, ...todo}
 
     setToDos([...toDos, newTodo])
+    }
   }
 
-  function handleDeleteClick(id) {
+  function handleCompleteClick(id) {
 
     const newArrayOfToDos = toDos.filter(element => element.id !== id)
 
@@ -41,7 +47,8 @@ function App() {
   return (
     <div className="App">
       <AddToDo onAdd={addToDo}/>
-      <Todo toDos={toDos} handleDeleteClick={handleDeleteClick} />
+      {error && <p className='error'>Please enter your task and due date</p>}
+      <Todo toDos={toDos} handleCompleteClick={handleCompleteClick} />
     </div>
   );
 }
