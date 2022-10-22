@@ -1,3 +1,57 @@
+# Doomatic - Keep Track of Your To Do's with Doomatic
+
+Keep track of your upcoming tasks using Doomatic, an interactive React app using Local Storage
+
+Link to project: https://doomatic.netlify.app/
+
+<img src="https://media.giphy.com/media/c0Il4AtoBLf18qH72g/giphy.gif" alt="doomatic overview" height="100%" />
+
+## How It's Made:
+
+**Tech used:**
+Tech used: CSS, React
+
+This was my first time utilizing Local Storage in order to store unique to do's for each user.
+
+## Optimizations
+
+- I originally had a due date tab, but decided it would be not as useful without added features. I'm hoping to build out the app more so users can search, filter, and sort by due date.
+
+- Perhaps add a notes section where users can click into a to do to get more of a description
+
+## Lessons Learned:
+
+Through this project, I was able to practice more with React concepts, such as:
+
+- Using the effect hook to utilize local storage
+
+- State
+
+- Conditional Rendering
+
+- Forms
+
+## Examples
+
+Take a look at these other examples that I have in my portfolio:
+
+Lucas Faustman Portfolio website: https://github.com/LucasFaustman/lucas-faustman-portfolio
+
+myPlayer.io: https://github.com/LucasFaustman/nba-Stat-Project
+
+Local Freelance Makeup Artist: https://github.com/LucasFaustman/local-makeup-artist-website
+
+My Small CRM: https://github.com/LucasFaustman/my-small-crm/tree/main
+
+BillTrackr: https://github.com/Ash1eyC0des/bill-trackr
+
+Memeify: https://github.com/LucasFaustman/memeify
+
+Machine Learning Brand Guesser: https://machine-brand-guesser.herokuapp.com/
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
