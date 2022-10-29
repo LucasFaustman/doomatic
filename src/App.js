@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/Header';
 import Todo from './components/Todo';
 import AddToDo from './components/AddToDo';
+import InspirationalQuote from './components/InspirationalQuote';
 import { useState, useEffect } from 'react';
 
 function App() {
@@ -52,9 +53,10 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <InspirationalQuote />
       <AddToDo onAdd={addToDo}/>
       {error && <p className='error'>Please enter your task</p>}
-      <Todo toDos={toDos} handleCompleteClick={handleCompleteClick} handleEditClick={handleEditClick} />
+      {toDos.length ? <Todo toDos={toDos} handleCompleteClick={handleCompleteClick} handleEditClick={handleEditClick} /> : <h3 className='d-flex justify-content-center text-dark'>Your tasks are all done!</h3>}
     </div>
   );
 }

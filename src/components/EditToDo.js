@@ -14,7 +14,7 @@ function handleExitEdits() {
 
     return (
         <div>
-<button type="button" className="btn btn-primary" data-toggle="modal" data-target={`#id${id}`}>
+<button type="button" className="btn btn-warning" data-toggle="modal" data-target={`#id${id}`}>
   Edit
 </button>
 
