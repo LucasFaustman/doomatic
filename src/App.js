@@ -43,6 +43,10 @@ function App() {
     
   }, [toDos]);
 
+  function handleEditClick(id, changedToDo) {
+     const newArrayOfToDos = toDos.map(element => element.id === id ? {...element, toDo: changedToDo} : element)
+     setToDos(newArrayOfToDos)
+  }
 
     
   return (
@@ -50,7 +54,7 @@ function App() {
       <Header />
       <AddToDo onAdd={addToDo}/>
       {error && <p className='error'>Please enter your task</p>}
-      <Todo toDos={toDos} handleCompleteClick={handleCompleteClick} />
+      <Todo toDos={toDos} handleCompleteClick={handleCompleteClick} handleEditClick={handleEditClick} />
     </div>
   );
 }
