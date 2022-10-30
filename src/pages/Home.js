@@ -4,9 +4,14 @@ import Todo from '../components/Todo';
 import AddToDo from '../components/AddToDo';
 import InspirationalQuote from '../components/InspirationalQuote';
 import { useState, useEffect } from 'react';
+import {  useDispatch } from 'react-redux'
+import {  increment } from '../features/counter/counterSlice'
+
+
 
 export default function Home() {
     const [error, setError] = useState(false)
+    const dispatch = useDispatch()
     const [toDos, setToDos] = useState(() => {
   
       const savedTodos = localStorage.getItem("toDos");
@@ -34,8 +39,9 @@ export default function Home() {
     function handleCompleteClick(id) {
   
       const newArrayOfToDos = toDos.filter(element => element.id !== id)
-  
+      dispatch(increment())
       setToDos(newArrayOfToDos)
+      
   
     }
   
@@ -52,7 +58,7 @@ export default function Home() {
       
     return (
       <div className="App">
-        <Header />
+        <Header headerLink={'/stats'} />
         <InspirationalQuote />
         <AddToDo onAdd={addToDo}/>
         {error && <p className='error'>Please enter your task</p>}

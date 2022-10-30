@@ -4,8 +4,6 @@ import React, { useState, useEffect} from "react";
 export default function InspirationalQuote() {
     const [quote, setQuote] = useState("")
 
-    console.log(quote)
-
 useEffect(() => {
     fetch("https://quotes.rest/qod?language=en")
     .then(response => response.json())
