@@ -1,5 +1,5 @@
 import './App.css';
-import Stats from './pages/Stats';
+import Reports from './pages/Reports';
 import Home from './pages/Home'
 import {BrowserRouter, Route, Routes} from "react-router-dom"
 import { Counter } from './features/counter/Counter';
@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path='/counter' element={<Counter/>} />
-      <Route path='/stats' element={<Stats />} />
+      <Route path='/reports' element={<Reports />} />
       <Route path='/' element={<Home />} />
     </Routes>
     </BrowserRouter>

@@ -11,13 +11,17 @@ Link to project: https://doomatic.netlify.app/
 **Tech used:**
 Tech used: CSS, React
 
-This was my first time utilizing Local Storage in order to store unique to do's for each user.
+This was my first time utilizing Local Storage in order to store unique to do's for each user. I also learned how to use Redux in order to utilize global state so users can see the total number of completed to do's in the reports page.
 
 ## Optimizations
 
 - I originally had a due date tab, but decided it would be not as useful without added features. I'm hoping to build out the app more so users can search, filter, and sort by due date.
 
-- Perhaps add a notes section where users can click into a to do to get more of a description
+- Perhaps add a notes section where users can click into a to do to get more of a description of a specific to do.
+
+- A built out reports section where users can see their completed to do's per month.
+
+- A monthly goal section
 
 ## Lessons Learned:
 
@@ -30,6 +34,10 @@ Through this project, I was able to practice more with React concepts, such as:
 - Conditional Rendering
 
 - Forms
+
+- Redux
+
+- Router Dom
 
 ## Examples
 

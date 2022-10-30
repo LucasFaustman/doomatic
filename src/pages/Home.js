@@ -41,6 +41,7 @@ export default function Home() {
       const newArrayOfToDos = toDos.filter(element => element.id !== id)
       dispatch(increment())
       setToDos(newArrayOfToDos)
+      console.log(`${new Date().getMonth().toString()} ${new Date().getFullYear().toString()}`)
       
   
     }
@@ -58,7 +59,7 @@ export default function Home() {
       
     return (
       <div className="App">
-        <Header headerLink={'/stats'} />
+        <Header headerLink={'/reports'} />
         <InspirationalQuote />
         <AddToDo onAdd={addToDo}/>
         {error && <p className='error'>Please enter your task</p>}

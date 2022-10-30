@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux'
 import Header from '../components/Header'
 
 
-export default function Stats() {
+export default function Reports() {
     const count = useSelector((state) => state.value)
     return (
         <div>
