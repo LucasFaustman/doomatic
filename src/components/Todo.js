@@ -6,7 +6,7 @@ export default function Todo({ toDos, handleCompleteClick, handleEditClick }) {
     const ToDoItem = toDos.map(item => {
        return <section className="todo" key={item.id}>
                 <h3 className='p-1 m-1'>{item.toDo}</h3>
-                <div className='d-flex p-0'>
+                <div className='d-flex justify-content-xl-around'>
                     <EditToDo toDoItem={item.toDo} id={item.id} handleEditClick={handleEditClick}  />
                     <button onClick={() => handleCompleteClick(item.id)} className="btn btn-success">Complete</button>
                 </div>
